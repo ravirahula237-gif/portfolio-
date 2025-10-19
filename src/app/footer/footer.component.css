@@ -1,0 +1,18 @@
+*{
+    font-family: MyFont;
+    margin:0%;
+    padding-inline: 2px;
+}
+
+.nav-link{
+    color: rgba(32, 29, 29, 0.537);
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+span{
+    font-size:5px ;
+}

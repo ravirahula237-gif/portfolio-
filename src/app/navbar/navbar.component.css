@@ -1,0 +1,116 @@
+* {
+  margin: 0%;
+}
+
+#bg {
+  background-image: url(/assets/heades_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  font-family: MyFont;
+  letter-spacing: 1.5px;
+  /* text-decoration: none; */
+  color: aliceblue;
+
+}
+
+h2 {
+  color: aliceblue;
+  padding: 10% 17% 7% 17%;
+  font-weight: 700;
+  word-spacing: 5px; 
+  /* word-break:keep-all; */
+}
+
+.toggler{
+  width: 100%;
+}
+
+.media_icon .fa-brands {
+  color: rgb(231, 231, 231);
+  font-size: 32px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.media_icon .fa-brands:hover {
+  color: aliceblue;
+  font-size: 35px;
+  border: solid 2px aliceblue;
+  background-color: rgba(188, 180, 180, 0.45);
+  padding: 8px;
+  transition: font-size 0.1s;
+}
+
+.angledown {
+  margin-top: 1%;
+  font-size: 30px;
+}
+
+.fa-angles-down{
+  color: rgba(188, 180, 180, 0.993);
+}
+.fa-angles-down:hover {
+  color: aliceblue;
+}
+
+.fa-angles-down:active{ .c2,.media_icon,.angledown{
+visibility: hidden;
+}}
+
+.navbar {
+  background-color: rgba(188, 180, 180, 0.226);
+  /* border-radius: 10px; */
+}
+
+.nav-link {
+  /* color: rgba(32, 29, 29, 0.537); */
+  color: aliceblue;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  /* color: black; */
+  color: aliceblue;
+}
+
+
+/* animation code */
+
+.c2 {
+  font-weight: 700;
+  font-size: 2.3em;
+}
+
+.c2 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.c2 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.c2 .line1 {
+  top: 0;
+  left: 0;
+}
+
+.c2 .letter {
+  display: inline-block;
+  line-height: 6em;
+}

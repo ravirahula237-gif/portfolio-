@@ -1,0 +1,68 @@
+:host {
+  display: block;
+}
+
+.bg3d {
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll-scene {
+  position: relative;
+  width: 100%;
+  height: 40vw; /* how long you scroll while it's pinned */
+  background: transparent;
+  perspective: 1000px; /* gives depth */
+  overflow: hidden;
+  /* overflow-y: scroll; */
+}
+
+.cylinder-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-out;
+
+}
+
+.panel {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #0077ff, #00ffaa); */
+  border-radius: 20px;
+  color: white;
+  font-size: 2rem;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
+}
+
+/* place 3 panels around a cylinder (120° apart) */
+.panel1 {
+  transform: rotateY(0deg) translateZ(250px);
+}
+.panel2 {
+  transform: rotateY(120deg) translateZ(250px);
+}
+.panel3 {
+  transform: rotateY(240deg) translateZ(250px);
+}
+
+#vid-size{
+  height: -webkit-fill-available;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
+
+}
